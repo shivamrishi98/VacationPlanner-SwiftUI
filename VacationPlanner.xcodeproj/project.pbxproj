@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964EC1E724C8850B00836ED6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964EC1E624C8850B00836ED6 /* CardView.swift */; };
 		96CE714B24C850B800A8F3A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE714A24C850B800A8F3A1 /* AppDelegate.swift */; };
 		96CE714D24C850B800A8F3A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE714C24C850B800A8F3A1 /* SceneDelegate.swift */; };
 		96CE714F24C850B800A8F3A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE714E24C850B800A8F3A1 /* ContentView.swift */; };
 		96CE715124C850BA00A8F3A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE715024C850BA00A8F3A1 /* Assets.xcassets */; };
 		96CE715424C850BA00A8F3A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96CE715324C850BA00A8F3A1 /* Preview Assets.xcassets */; };
 		96CE715724C850BA00A8F3A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96CE715524C850BA00A8F3A1 /* LaunchScreen.storyboard */; };
+		96CE716024C8513900A8F3A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE715F24C8513900A8F3A1 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		964EC1E624C8850B00836ED6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		96CE714724C850B800A8F3A1 /* VacationPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacationPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CE714A24C850B800A8F3A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96CE714C24C850B800A8F3A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		96CE715324C850BA00A8F3A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96CE715624C850BA00A8F3A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96CE715824C850BA00A8F3A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CE715F24C8513900A8F3A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,7 @@
 			children = (
 				96CE714A24C850B800A8F3A1 /* AppDelegate.swift */,
 				96CE714C24C850B800A8F3A1 /* SceneDelegate.swift */,
-				96CE714E24C850B800A8F3A1 /* ContentView.swift */,
+				96CE715E24C8512200A8F3A1 /* Views */,
 				96CE715024C850BA00A8F3A1 /* Assets.xcassets */,
 				96CE715524C850BA00A8F3A1 /* LaunchScreen.storyboard */,
 				96CE715824C850BA00A8F3A1 /* Info.plist */,
@@ -73,6 +77,16 @@
 				96CE715324C850BA00A8F3A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96CE715E24C8512200A8F3A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96CE714E24C850B800A8F3A1 /* ContentView.swift */,
+				96CE715F24C8513900A8F3A1 /* HomeView.swift */,
+				964EC1E624C8850B00836ED6 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				96CE714B24C850B800A8F3A1 /* AppDelegate.swift in Sources */,
+				96CE716024C8513900A8F3A1 /* HomeView.swift in Sources */,
 				96CE714D24C850B800A8F3A1 /* SceneDelegate.swift in Sources */,
 				96CE714F24C850B800A8F3A1 /* ContentView.swift in Sources */,
+				964EC1E724C8850B00836ED6 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +305,7 @@
 				DEVELOPMENT_TEAM = NBL2DFM5E9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VacationPlanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +326,7 @@
 				DEVELOPMENT_TEAM = NBL2DFM5E9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VacationPlanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
